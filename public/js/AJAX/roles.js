@@ -4,7 +4,7 @@ $(function() {
         var nombre_rol = $('#nombre_rol').val();
         $.ajax({
           type: "POST",
-          url: "https://proyectoja2021.000webhostapp.com/roles/validar",
+          url: "localhost/roles/validar",
           data: ('nombre_rol=' + nombre_rol),
           beforeSend: function(){
             $('#imagen').show();
@@ -35,7 +35,7 @@ $(function() {
         
         $.ajax({
           type: "POST",
-          url: "https://proyectoja2021.000webhostapp.com/roles/registrar",
+          url: "localhost/roles/registrar",
           data: {selected: selected , 'nombre_rol' : nombre_rol},
           beforeSend: function(){
             $('#imagen').show();

@@ -36,7 +36,7 @@ $(document).ready(function () {
     $.ajax({
       type: "POST",
       enctype: 'multipart/form-data',
-      url: "https://proyectoja2021.000webhostapp.com/nominas/modificar",
+      url: "localhost/nominas/modificar",
       processData: false,
       contentType: false,
       data: data,

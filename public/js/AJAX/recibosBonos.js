@@ -14,7 +14,7 @@ $(function () {
 
       $.ajax({
         type: "POST",
-        url: "https://proyectoja2021.000webhostapp.com/bonos/registrar",
+        url: "localhost/bonos/registrar",
         data: ('trabajador=' + trabajador + '&bono=' + bono + '&periodo_desde=' + periodo_desde + '&periodo_hasta=' + periodo_hasta 
           + '&pago=' + pago+ '&fecha_pago=' + fecha_pago),
         beforeSend: function () {
