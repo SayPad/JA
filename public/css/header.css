@@ -1,0 +1,87 @@
+/* header =================================================================*/
+@font-face{
+  font-family: 'fuente-logo';
+  src: url(../fuentes/Hardigan.otf);
+}
+#fuente{
+  font-family: 'fuente-logo';
+}
+header {
+	margin-top: -200px;
+	margin-left: -8px;
+	position: fixed;
+	z-index: 100;
+	height: 90px;
+  width:100%; /* Establecemos que el header abarque el 100% del documento */
+  overflow:hidden; /* Eliminamos errores de float */
+  background:#156498;
+  margin-bottom:20px;
+  box-shadow: 0px 9px 8px 2px rgba(0, 0, 0, 0.75);
+
+}
+.linea-logo{
+	position: absolute;
+	margin-top: 42px;
+	margin-left: 35px;
+	width: 260px;
+
+
+}
+.wrapper {
+	width:100%; /* Establecemos que el ancho sera del 90% */
+	max-width:1000px; /* Aqui le decimos que el ancho máximo sera de 1000px */
+	margin:auto; /* Centramos los elementos */
+	overflow:hidden; /* Eliminamos errores de float */
+}
+.img-logo{
+	position: absolute;
+	width: 120px;
+	margin-top: 15px;
+	margin-left: -80px;
+}
+header .logo {
+	margin-left: 30px;
+	color:#f2f2f2;
+	font-size:20px;
+	line-height:65px;
+	float:left;
+}
+header .detalles {
+	margin-left: -255px;
+	color:#f2f2f2;
+	font-size:12px;
+	line-height:100px;
+	float:left;
+}
+header .rif {
+	margin-left: -100px;
+	color:#f2f2f2;
+	font-size:12px;
+	line-height:130px;
+	float:left;
+}
+
+header nav {
+	float:right;
+	line-height: 90px;
+}
+
+header nav a {
+	display:inline-block;
+	color:#fff;
+	 border-radius: 20px;
+	text-decoration:none;
+	padding: 5px 10px;
+	line-height:normal;
+	font-size:12px;
+	font-weight:bold;
+	-webkit-transition:all 500ms ease;
+	-o-transition:all 500ms ease;
+	transition:all 500ms ease;
+}
+
+header nav a:hover {
+  background: #f8b7d4;
+  box-shadow: 0px 4px 10px -5px #4082f5;
+  cursor: pointer;
+}

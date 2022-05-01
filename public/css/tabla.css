@@ -1,0 +1,119 @@
+
+.flex{
+  display: flex;
+}
+
+.tabla {
+  border: 2.2px solid #aaa;
+  color: #fff;
+  font-family: helvetica, sans-serif;
+  height: auto;
+  width: auto;
+  background: #76d4c4;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 0 10px;
+  animation-name: aparecer;
+  animation-duration: 1s;
+  padding: 10px 10px;
+}
+
+
+.overflow {
+  max-height: 400px;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.tabla-titulo {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;
+  -ms-align-items: center;
+  align-items: center;
+ font-size: 1.5em;
+  padding: 10px 0;
+  background: #f56f3a; 
+}
+
+.tabla table {
+  padding: 10px;
+  border-collapse: collapse;
+ margin: auto;
+}
+
+.tabla td,
+.tabla th {
+  text-align: center;
+  border: 1px solid #aaa;
+  
+  color: #222;
+  height: 30px;
+  padding: 0 0px;
+}
+.tabla td {
+  font-size: 12px;
+}
+
+.tabla th {
+  font-size: 10px;
+  background: #156498;
+  color: #fff;
+}
+
+.tabla tr{
+  background: white;
+}
+.tabla tr:hover{
+  background: #ddd;
+}
+
+.tabla td .crud {
+  text-decoration: none;
+  margin: 5px 0;
+  color: #fff;
+  background: #156498;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  font-size: 1em;
+  font-weight: bold;
+  transition: all ease .2s;
+}
+.tabla td .crud:hover {
+  background:#f8b7d4 ;
+  color: black;
+  cursor: pointer;
+}
+
+.tabla .bottom {
+  padding: 15px;
+  color: #fff;
+  text-align: right;
+}
+.tabla .bottom a{
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #fff;
+  background: #156498;
+  transition: all ease .5s;
+}
+.tabla .bottom a:hover{
+  background: #f8b7d4;
+  color: black;
+}
+
+.tabla tbody {
+  max-height: 400px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.tabla .vacio {
+  padding: 10px 0;
+  text-align: center;
+  border-bottom: 1px solid rgba(255,255,255,.5);
+}

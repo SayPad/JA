@@ -1,0 +1,7 @@
+1)crear un nuevo usuario en el gestor mysql:
+nombre: admin
+contraseña: admin
+2)permitir todos los permisos
+3)crear una base de dato llamada "UT" con formato utf8_bin
+4)en crear tabla se presiona [importar] y se busca en el la carpeta
+del sistema el archivo llamado "bd.sql"

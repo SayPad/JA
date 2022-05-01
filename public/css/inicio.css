@@ -1,0 +1,98 @@
+main {
+  margin-top: 200px;
+  min-height: 360px;
+  flex: 1 1 auto;
+  align-self: stretch;
+  /* posicion para elementos dentro de el */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contenido {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.titulo {
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-top: 10px;   
+    padding-bottom: 10px;
+    background-color: steelblue;
+    width: 100%;
+}
+
+.izquierda {
+    margin-left: 57px;
+    float: left;
+    position: relative;
+    width: 45%;
+    border: steelblue solid 1px;
+    height: auto;
+}
+ 
+.derecha {
+    margin-left: 10px;
+    position: relative;
+    float: left;
+    width: 45%;
+    border: steelblue solid 1px;
+    height: auto;
+}
+.tabla1 {
+  height: 90px;
+  margin: 10px;
+  background-color: rgba(3, 3, 3, 0.3);
+  color: #fff;
+  padding: 10px;
+  font-family: helvetica;
+  border-radius: 10px;
+  transition: transform ease .3s;
+}
+.tabla2 {
+  color: #fff;
+  font-family: helvetica, sans-serif;
+  font-size: 80%;
+  background: #76d4c4;
+  overflow: hidden;
+}
+.tabla3 {
+  width: 100%;
+  color: black;
+  font-family: helvetica, sans-serif;
+  font-size: 80%;
+  background: white;
+  overflow: hidden;
+}
+
+.tabla2 td,
+.tabla2 th {
+  text-align: center;
+  border: 2.2px solid #aaa;
+  color: #222;
+  height: 23px;
+  width: 79px;
+}
+
+.tabla3 td {
+  text-align: center;
+  border: 2.2px solid #aaa;
+  color: #222;
+  height: 23px;
+}
+.tabla2 tr{
+  background: white;
+}
+.tabla3 th{
+  background: grey;
+  text-align: center;
+  border: 2.2px solid #aaa;
+  color: white;
+  height: 23px;
+}
+.tabla3 tr:hover{
+  background: #ddd;
+}
