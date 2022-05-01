@@ -11,7 +11,7 @@ $(function() {
         var fecha_pago = $('#fecha_pago').val();
         $.ajax({
           type: "POST",
-          url: "https://proyectoja2021.000webhostapp.com/nominas/registrar",
+          url: "localhost/nominas/registrar",
           data: ('trabajador=' + trabajador + '&periodo_desde='+ periodo_desde + '&periodo_hasta='+ periodo_hasta+ 
             '&horas_extras='+ horas_extras + '&pago='+ pago + '&fecha_pago='+ fecha_pago),
           beforeSend: function(){

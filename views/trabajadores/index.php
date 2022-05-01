@@ -47,7 +47,7 @@
               </tr >
             </thead>
      
-            <tbody id="tbody-trabajador">
+            <tbody id="tbody-trabajadores">
               <?php
                 foreach($this->trabajadores as $row){
                   $trabajador = new TrabajadoresClass();

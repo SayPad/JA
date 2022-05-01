@@ -4,7 +4,7 @@ $(function() {
         var nombre = $('#nombre').val();
         $.ajax({
           type: "POST",
-          url: "https://proyectoja2021.000webhostapp.com/cargo/validar",
+          url: "localhost/cargo/validar",
           data: ('nombre=' + nombre),
           beforeSend: function(){
             $('#imagen').show();
@@ -30,7 +30,7 @@ $(function() {
         
         $.ajax({
           type: "POST",
-          url: "https://proyectoja2021.000webhostapp.com/cargo/registrar",
+          url: "localhost/cargo/registrar",
           data: ('nombre=' + nombre + '&sueldo='+ sueldo + '&prima='+ prima),
           beforeSend: function(){
             $('#imagen').show();
@@ -159,7 +159,7 @@ $(document).ready(function () {
     $.ajax({
       type: "POST",
       enctype: 'multipart/form-data',
-      url: "https://proyectoja2021.000webhostapp.com/cargo/modificarCargo",
+      url: "localhost/cargo/modificarCargo",
       processData: false,
       contentType: false,
       data: data,

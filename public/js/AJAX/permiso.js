@@ -9,7 +9,7 @@ $(function() {
         var descripcion = $('#descripcion').val();
         $.ajax({
           type: "POST",
-          url: "https://proyectoja2021.000webhostapp.com/permiso/registrar",
+          url: "localhost/permiso/registrar",
           data: ('trabajador=' + trabajador + '&desde='+ desde + '&hasta='+ hasta+ '&descripcion='+ descripcion),
           beforeSend: function(){
             $('#imagen').show();
@@ -109,7 +109,7 @@ $(document).ready(function () {
     $.ajax({
       type: "POST",
       enctype: 'multipart/form-data',
-      url: "https://proyectoja2021.000webhostapp.com/permiso/modificarPermiso",
+      url: "localhost/permiso/modificarPermiso",
       processData: false,
       contentType: false,
       data: data,

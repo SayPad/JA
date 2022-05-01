@@ -12,7 +12,7 @@ $(function() {
         var pago = $('#pago').val();
         $.ajax({
           type: "POST",
-          url: "https://proyectoja2021.000webhostapp.com/trabajos_extras/registrar",
+          url: "localhost/trabajos_extras/registrar",
           data: ('trabajador=' + trabajador + '&descripcion_trabajo='+ descripcion_trabajo + 
             '&fecha_trabajo='+ fecha_trabajo+ '&tipo_pago='+ tipo_pago + '&fecha_pago='+ fecha_pago + 
             '&descripcion='+ descripcion + '&cantidad='+ cantidad + '&pago='+ pago),

@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
       let id = boton.dataset.id;
       if (respuesta) {
         //solicitud AJAX
-        let url = 'https://proyectoja2021.000webhostapp.com/' + data['controlador'] + '/' + data['metodo'] + '/' + id
+        let url = 'localhost/' + data['controlador'] + '/' + data['metodo'] + '/' + id
 
         httpRequest(url, function() {
           const tbody = document.querySelector("#tbody-" + data['controlador'])
@@ -53,9 +53,9 @@ function checkFilas () {
     const tbody = document.querySelector("#tbody-" + data['controlador'])
     const box = document.querySelector(".bottom")
 
-    p.appendChild(text);
-    box.before(p)
-    p.classList.add('vacio')
+    $(tbody).append($("<tr><td colspan='9'>No hay registros</td></tr>"));
+    //box.before(tbody)
+    tbody.classList.add('vacio')
   }
 }
 

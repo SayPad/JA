@@ -4,7 +4,7 @@ $(function() {
         var cedula = $('#cedula').val();
         $.ajax({
           type: "POST",
-          url: "https://proyectoja2021.000webhostapp.com/trabajadores/validar",
+          url: "localhost/trabajadores/validar",
           data: ('cedula=' + cedula),
           beforeSend: function(){
             $('#imagen').show();
@@ -32,7 +32,7 @@ $(function() {
         var fecha = $('#fecha').val();
         $.ajax({
           type: "POST",
-          url: "https://proyectoja2021.000webhostapp.com/trabajadores/registrar",
+          url: "localhost/trabajadores/registrar",
           data: ('cargo=' + cargo + '&nombre='+ nombre + '&apellido='+ apellido+ '&cedula='+ cedula + '&correo='+ correo + '&fecha='+ fecha),
           beforeSend: function(){
             $('#imagen').show();
@@ -167,7 +167,7 @@ $(document).ready(function () {
     $.ajax({
       type: "POST",
       enctype: 'multipart/form-data',
-      url: "https://proyectoja2021.000webhostapp.com/trabajadores/modificarTrabajador",
+      url: "localhost/trabajadores/modificarTrabajador",
       processData: false,
       contentType: false,
       data: data,

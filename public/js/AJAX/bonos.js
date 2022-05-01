@@ -13,7 +13,7 @@ $(function () {
 
       $.ajax({
         type: "POST",
-        url: "https://proyectoja2021.000webhostapp.com/bonos/registrarBonos",
+        url: "localhost/bonos/registrarBonos",
         data: ('nombre_bono=' + nombre_bono + '&cargo=' + cargo + '&moneda=' + moneda + '&valor=' + valor + '&dias=' + dias),
         beforeSend: function () {
           $('#imagen').show();
